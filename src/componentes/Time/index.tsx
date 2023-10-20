@@ -7,7 +7,7 @@ interface TimeProps {
     corPrimaria: string
     corSecundaria: string
     nome: string
-    colaboradores: IColaborador[]
+    colaboradores: IColaborador[] 
 
 
 
@@ -27,7 +27,9 @@ const Time = (props: TimeProps) => {
                         key={colaborador.nome}
                         nome={colaborador.nome}
                         cargo={colaborador.cargo}
-                        imagem={colaborador.imagem} />)}
+                        imagem={colaborador.imagem} 
+                        data={colaborador.data} 
+                        />)}
             </div>
         </section>
             : <React.Fragment></React.Fragment>    )
